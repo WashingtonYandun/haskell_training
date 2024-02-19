@@ -17,4 +17,5 @@ fibList = takeWhile (<= 4000000) [fib x | x <- [0..]]
 
 res = sum [x | x <- fibList, isEven x]
 
+main :: IO ()
 main = print res -- 4613732
